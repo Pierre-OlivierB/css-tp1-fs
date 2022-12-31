@@ -1,0 +1,157 @@
+/* police inter */
+:root {
+    --color1: hsl(238, 100%, 64%);
+    --color2: hsl(0, 0%, 98%);
+    --color3: hsl(0, 0%, 11%);
+    --color4: hsl(0, 0%, 5%);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: inter;
+    color: var(--color2);
+    background: var(--color3);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+li::marker {
+    content: '';
+}
+
+.header {
+    display: flex;
+    height: 80%;
+}
+
+.header-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .header-left-container {
+    height: 100%;
+} */
+
+.header-left-container * {
+    margin: 10px;
+
+}
+
+.header-left-container h1 {
+    font-size: 5vw;
+}
+
+.header-left-container h3 {
+    color: var(--color1);
+    font-size: 2vw;
+}
+
+.header-left-container p {
+    font-size: 1vw;
+}
+
+.header-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-right img {
+    width: 90%;
+}
+
+.infos {
+    background: var(--color4);
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    height: 20%;
+}
+
+.infos-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+    padding: 10px;
+}
+
+.btn-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.btn-container button {
+    height: 30%;
+    max-width: 150px;
+    background: var(--color1);
+    color: var(--color2);
+    font-family: inter;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.infos-right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infos-right h3 {
+    margin-top: 3px;
+    height: 20%;
+    padding: 10px;
+}
+
+.investors {
+    height: 60%;
+}
+
+.img-container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.investors .img-container {
+    display: flex;
+}
+
+.investors .img-container img {
+    width: 80px;
+    height: 50px;
+}
