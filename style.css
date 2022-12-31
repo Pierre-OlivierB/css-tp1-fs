@@ -21,7 +21,7 @@ body {
     font-family: inter;
     color: var(--color2);
     background: var(--color3);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,7 +45,7 @@ li::marker {
 
 .header {
     display: flex;
-    height: 80%;
+    height: 70%;
 }
 
 .header-left {
@@ -91,7 +91,7 @@ li::marker {
 .infos {
     background: var(--color4);
     border-radius: 10px;
-    margin: 20px;
+    margin: 15px;
     display: flex;
     height: 20%;
 }
@@ -105,7 +105,6 @@ li::marker {
 }
 
 .btn-container {
-    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -113,6 +112,7 @@ li::marker {
 }
 
 .btn-container button {
+    min-height: 40px;
     height: 30%;
     max-width: 150px;
     background: var(--color1);
@@ -120,11 +120,12 @@ li::marker {
     font-family: inter;
     padding: 5px;
     border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .infos-right {
     width: 70%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
